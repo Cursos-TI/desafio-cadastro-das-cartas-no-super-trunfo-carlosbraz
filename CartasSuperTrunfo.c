@@ -22,19 +22,20 @@ int main() {
     float area1, PIB1;
     char Estado1;
     char cidade1[20];
-    char CodCarta[20];
+    char CodCarta1[20];
 
     //dados da segunda cidade
     int populacao2, Pturisticos2;
     float area2, PIB2;
     char Estado2;
     char cidade2[20];
+    char CodCarta2[20];
 
     printf("Cadastro de Cartas do Jogo Super Trunfo \n");
     printf("Digite o estado da Primeira carta: \n");
     scanf("%c", &Estado1);
     printf("Digite o codigo da primeira carta: \n");
-    scanf("%s", &CodCarta);
+    scanf("%s", &CodCarta1);
     printf("Digite a cidade da primeira carta: \n");
     scanf("%s", &cidade1);
     printf("Digite a area em metros quadrados da primeira cidade: \n");
@@ -46,5 +47,20 @@ int main() {
     printf("Digite o PIB da primeira cidade: \n");
     scanf("%f", &PIB1);
     
+    printf("Digite o estado da segunda carta: \n");
+    scanf("%c", &Estado2);
+    printf("Digite o codigo da segunda carta: \n");
+    scanf("%s", &CodCarta2);
+    printf("Digite a cidade da segunda carta: \n");
+    scanf("%s", &cidade2);
+    printf("Digite a area em metros quadrados da segunda cidade: \n");
+    scanf("%f", &area2);
+    printf("Digite a populacao da segunda cidade: \n");
+    scanf("%d", &populacao2);
+    printf("Digite a quantidade de pontos turisticos da segunda cidade: \n");
+    scanf("%d", &Pturisticos2);
+    printf("Digite o PIB da segunda cidade: \n");
+    scanf("%f", &PIB2);
+
     return 0;
 }
