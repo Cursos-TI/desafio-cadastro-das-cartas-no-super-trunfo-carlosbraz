@@ -62,5 +62,22 @@ int main() {
     printf("Digite o PIB da segunda cidade: \n");
     scanf("%f", &PIB2);
 
+    printf("Digite o estado da Primeira carta: %c\n", Estado1);
+    printf("Digite o codigo da primeira carta: %s\n", CodCarta1);
+    printf("Digite a cidade da primeira carta: %s\n", cidade1);
+    printf("area em metros quadrados da primeira cidade: %f\n", area1);
+    printf("populacao da primeira cidade: %d\n", populacao1);
+    printf("quantidade de pontos turisticos da primeira cidade: %d\n", Pturisticos1);
+    printf("PIB da primeira cidade: %f\n", PIB1);
+    
+
+    printf("Digite o estado da segunda carta: %c\n", Estado2);
+    printf("Digite o codigo da segunda carta: %s\n", CodCarta2);
+    printf("Digite a cidade da segunda carta: %s\n", cidade2);
+    printf("area em metros quadrados da segunda cidade: %f\n", area2);
+    printf("populacao da segunda cidade: %d\n", populacao2);
+    printf("quantidade de pontos turisticos da segunda cidade: %d\n", Pturisticos2);
+    printf("PIB da segunda cidade: %f\n", PIB2);
+
     return 0;
 }
