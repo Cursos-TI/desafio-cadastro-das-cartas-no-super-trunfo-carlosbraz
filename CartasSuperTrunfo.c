@@ -32,6 +32,7 @@ int main() {
     char CodCarta2[20];
 
     printf("Cadastro de Cartas do Jogo Super Trunfo \n");
+    //inicio da entrada de dados da primeira carta
     printf("Digite o estado da Primeira carta: \n");
     scanf("%c", &Estado1);
     printf("Digite o codigo da primeira carta: \n");
@@ -46,7 +47,7 @@ int main() {
     scanf("%d", &Pturisticos1);
     printf("Digite o PIB da primeira cidade: \n");
     scanf("%f", &PIB1);
-    
+    //inicio da entrada de dados da segunda carta
     printf("Digite o estado da segunda carta: \n");
     scanf("%c", &Estado2);
     printf("Digite o codigo da segunda carta: \n");
@@ -62,6 +63,7 @@ int main() {
     printf("Digite o PIB da segunda cidade: \n");
     scanf("%f", &PIB2);
 
+    //saida de dados armazenados da primeira carta
     printf("Digite o estado da Primeira carta: %c\n", Estado1);
     printf("Digite o codigo da primeira carta: %s\n", CodCarta1);
     printf("Digite a cidade da primeira carta: %s\n", cidade1);
@@ -70,12 +72,12 @@ int main() {
     printf("quantidade de pontos turisticos da primeira cidade: %d\n", Pturisticos1);
     printf("PIB da primeira cidade: %f\n", PIB1);
     
-
+    //saida de dados armazenados da segunda carta
     printf("Digite o estado da segunda carta: %c\n", Estado2);
     printf("Digite o codigo da segunda carta: %s\n", CodCarta2);
     printf("Digite a cidade da segunda carta: %s\n", cidade2);
     printf("area em metros quadrados da segunda cidade: %f\n", area2);
-    printf("populacao da segunda cidade: %d\n", populacao2);
+    prinidtf("populacao da segunda cidade: %d\n", populacao2);
     printf("quantidade de pontos turisticos da segunda cidade: %d\n", Pturisticos2);
     printf("PIB da segunda cidade: %f\n", PIB2);
 
