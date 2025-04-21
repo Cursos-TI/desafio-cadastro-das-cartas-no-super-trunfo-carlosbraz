@@ -18,15 +18,17 @@
 
 int main() {
     //dados da primeira cidade
-    int populacao1, Pturisticos1;
-    float area1, PIB1;
+    int Pturisticos1;
+    float populacao1, area1, PIB1;
+    float PIBperCap1, DensPop1;
     char Estado1;
     char cidade1[20];
     char CodCarta1[20];
 
     //dados da segunda cidade
-    int populacao2, Pturisticos2;
-    float area2, PIB2;
+    int Pturisticos2;
+    float populacao2, area2, PIB2;
+    float PIBperCap2, DensPop2;
     char Estado2;
     char cidade2[20];
     char CodCarta2[20];
@@ -47,6 +49,10 @@ int main() {
     scanf("%d", &Pturisticos1);
     printf("Digite o PIB da primeira cidade: \n");
     scanf("%f", &PIB1);
+    DensPop1==populacao1/area1; //calculo da densidade populacional
+    PIBperCap1==PIB1/populacao1; //calculo do PIB per capta
+
+
     //inicio da entrada de dados da segunda carta
     printf("Digite o estado da segunda carta: \n");
     scanf("%c", &Estado2);
@@ -62,24 +68,32 @@ int main() {
     scanf("%d", &Pturisticos2);
     printf("Digite o PIB da segunda cidade: \n");
     scanf("%f", &PIB2);
+    DensPop2==populacao2/area2; //calculo da densidade populacional
+    PIBperCap2==PIB2/populacao2; //calculo do PIB per capta 
+
 
     //saida de dados armazenados da primeira carta
-    printf("Digite o estado da Primeira carta: %c\n", Estado1);
-    printf("Digite o codigo da primeira carta: %s\n", CodCarta1);
-    printf("Digite a cidade da primeira carta: %s\n", cidade1);
+    printf("o estado da Primeira carta: %c\n", Estado1);
+    printf("o codigo da primeira carta: %s\n", CodCarta1);
+    printf("a cidade da primeira carta: %s\n", cidade1);
     printf("area em metros quadrados da primeira cidade: %f\n", area1);
     printf("populacao da primeira cidade: %d\n", populacao1);
     printf("quantidade de pontos turisticos da primeira cidade: %d\n", Pturisticos1);
     printf("PIB da primeira cidade: %f\n", PIB1);
-    
+    printf("PIB per capta da primeira cidade: %f RS/por pessoa em media\n", PIBperCap1);
+    printf("Densidade populacional da primeira cidade: %f hab/km\n", DensPop1);
+
     //saida de dados armazenados da segunda carta
-    printf("Digite o estado da segunda carta: %c\n", Estado2);
-    printf("Digite o codigo da segunda carta: %s\n", CodCarta2);
-    printf("Digite a cidade da segunda carta: %s\n", cidade2);
+    printf("o estado da segunda carta: %c\n", Estado2);
+    printf("o codigo da segunda carta: %s\n", CodCarta2);
+    printf("a cidade da segunda carta: %s\n", cidade2);
     printf("area em metros quadrados da segunda cidade: %f\n", area2);
-    prinidtf("populacao da segunda cidade: %d\n", populacao2);
+    printf("populacao da segunda cidade: %d\n", populacao2);
     printf("quantidade de pontos turisticos da segunda cidade: %d\n", Pturisticos2);
     printf("PIB da segunda cidade: %f\n", PIB2);
-
+    printf("PIB per capta da segunda cidade: %f RS/por pessoa em media\n", PIBperCap2);
+    printf("Densidade populacional da segunda cidade: %f hab/km\n", DensPop2);
+   
+   
     return 0;
 }
