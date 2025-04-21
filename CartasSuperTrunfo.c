@@ -49,8 +49,8 @@ int main() {
     scanf("%d", &Pturisticos1);
     printf("Digite o PIB da primeira cidade: \n");
     scanf("%f", &PIB1);
-    DensPop1==populacao1/area1; //calculo da densidade populacional
-    PIBperCap1==PIB1/populacao1; //calculo do PIB per capta
+    DensPop1=populacao1/area1; //calculo da densidade populacional
+    PIBperCap1=PIB1/populacao1; //calculo do PIB per capta
 
 
     //inicio da entrada de dados da segunda carta
@@ -68,8 +68,8 @@ int main() {
     scanf("%d", &Pturisticos2);
     printf("Digite o PIB da segunda cidade: \n");
     scanf("%f", &PIB2);
-    DensPop2==populacao2/area2; //calculo da densidade populacional
-    PIBperCap2==PIB2/populacao2; //calculo do PIB per capta 
+    DensPop2=populacao2/area2; //calculo da densidade populacional
+    PIBperCap2=PIB2/populacao2; //calculo do PIB per capta 
 
 
     //saida de dados armazenados da primeira carta
