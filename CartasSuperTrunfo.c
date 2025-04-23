@@ -107,6 +107,17 @@ int main() {
     printf("PIB per capta da segunda cidade: %f RS/por pessoa em media\n", PIBperCap2);
     printf("Densidade populacional da segunda cidade: %f hab/km\n", DensPop2);
     printf("Super poder da carta %c: %f \n", Estado2, SuperPoder2);
-   
+
+    if (area1>area2){
+        printf("Area da cidade %c e maior", &cidade1);    
+    }
+    if (area1<area2){
+        printf("Area da cidade %c e maior", &cidade2);    
+    }
+
+
+
+
+
     return 0;
 }
