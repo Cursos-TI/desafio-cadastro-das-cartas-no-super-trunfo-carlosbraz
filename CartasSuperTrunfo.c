@@ -65,7 +65,6 @@ int main() {
 
     //inicio da entrada de dados da segunda carta
     printf("Digite o estado da segunda carta: \n");
-    printf("Digite o estado da segunda carta: \n");
     scanf("%c", &Estado2);
     printf("Digite o codigo da segunda carta: \n");
     scanf("%s", &CodCarta2);
