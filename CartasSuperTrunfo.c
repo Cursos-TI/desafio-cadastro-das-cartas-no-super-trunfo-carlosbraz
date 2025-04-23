@@ -19,6 +19,7 @@
 int main() {
     //dados da primeira cidade
     int Pturisticos1;
+    int ContPartida1;
     unsigned long int populacao1;
     float SuperPoder1;
     float area1, PIB1;
@@ -29,6 +30,7 @@ int main() {
 
     //dados da segunda cidade
     int Pturisticos2;
+    int ContPartida2;
     unsigned long int populacao2;
     float SuperPoder2;
     float area2, PIB2;
@@ -108,15 +110,75 @@ int main() {
     printf("Densidade populacional da segunda cidade: %f hab/km\n", DensPop2);
     printf("Super poder da carta %c: %f \n", Estado2, SuperPoder2);
 
+    ContPartida1++;
+    ContPartida2++;
     if (area1>area2){
-        printf("Area da cidade %c e maior", &cidade1);    
+        printf("Area da cidade %c e maior", &cidade1); 
+        ContPartida1++;   
     }
     if (area1<area2){
         printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
     }
-
-
-
+    if (populacao1>populacao2){
+        printf("Area da cidade %c e maior", &cidade1);
+        ContPartida1++;    
+    }
+    if (populacao1<populacao2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    if (Pturisticos1>Pturisticos2){
+        printf("Area da cidade %c e maior", &cidade1);
+        ContPartida1++;
+    }
+    if (Pturisticos1<Pturisticos2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    if (PIB1>PIB2){
+        printf("Area da cidade %c e maior", &cidade1);    
+        ContPartida1++;
+    }
+    if (PIB1<PIB2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    if (PIBperCap1>PIBperCap2){
+        printf("Area da cidade %c e maior", &cidade1);
+        ContPartida1++;    
+    }
+    if (PIBperCap1<PIBperCap2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    if (DensPop1<DensPop2){
+        printf("Area da cidade %c e maior", &cidade1);
+        ContPartida1++;    
+    }
+    if (DensPop1>DensPop2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    if (SuperPoder1>SuperPoder2){
+        printf("Area da cidade %c e maior", &cidade1);
+        ContPartida1++;    
+    }
+    if (SuperPoder1<SuperPoder2){
+        printf("Area da cidade %c e maior", &cidade2);    
+        ContPartida2++;
+    }
+    
+    if (ContPartida1>ContPartida2){
+        printf("A cidade %c venceu", &cidade1);
+    }else if (ContPartida1<ContPartida2){
+        printf("A cidade %c venceu", &cidade2); 
+    }else{
+        printf("As cartas terminaram a disputa empatas"); 
+    }
+    
+    
+    
 
 
     return 0;
